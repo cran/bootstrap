@@ -21,7 +21,8 @@ difference calculations}
 }
 \value{
 list with following components
-\item{limits}{The estimated confidence points, from the ABC and standard normal methods}
+\item{limits}{The estimated confidence points, from the ABC and 
+                 standard normal methods}
 \item{stats}{list consisting of \code{t0}=observed value of \code{tt},
   \code{sighat}=infinitesimal jackknife estimate 
  of standard error of \code{tt}, \code{bhat}=estimated bias}
@@ -53,7 +54,7 @@ theta <- function(p, x)
     x2m <- sum(p * x[, 2])/sum(p)
     num <- sum(p * (x[, 1] - x1m) * (x[, 2] - x2m))
     den <- sqrt(sum(p * (x[, 2] - x1m)^2) *
-              sum(p * (x[, 2] - x1m)^2))
+              sum(p * (x[, 2] - x2m)^2))
     return(num/den)
 \}
 results <- abcnon(x, theta)   

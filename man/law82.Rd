@@ -22,8 +22,6 @@
 }
 
 \examples{
-data(law82)
-str(law82)
 plot(law82[,2:3])
 cor(law82[,2:3])
 }

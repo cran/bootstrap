@@ -4,7 +4,7 @@
 \title{ Experiment with mouse     }
 \description{
   A small randomized experiment were done with 16 mouse, 7 to treatment group
-  and 9 to control group. Treatment was intended to prolong survivl 
+  and 9 to control group. Treatment was intended to prolong survival 
   after a test surgery.
 }
 \usage{data(mouse.t)}
@@ -23,8 +23,6 @@
   Chapman and Hall, New York, London.
 }
 \examples{
-data(mouse.t)
-data(mouse.c)
 str(mouse.t)
 stripchart(list(treatment=mouse.t, control=mouse.c))
 }

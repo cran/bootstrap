@@ -13,3 +13,17 @@ Changes from original:
 
 
 Fritz Leisch
+
+New changes as of 2005:
+
+       returns of the form return(  ,  ,  ,  ...) changed to
+                           return(list(  ,  ,  ,  ...))
+
+       Code - documentation inconsistencies removed
+
+       Added help pages for all the datasets, and removed the dummy one. 
+       
+       Added examples, some new datasets added.
+
+
+Kjetil Halvorsen

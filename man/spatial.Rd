@@ -24,8 +24,8 @@
   Chapman and Hall, New York, London.
 }
 \examples{
-data(spatial)
 str(spatial)
 plot(spatial) 
+abline(0,1, col="red2")
 }
 \keyword{datasets}

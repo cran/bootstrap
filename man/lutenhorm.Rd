@@ -1,9 +1,12 @@
 \name{lutenhorm}
 \alias{lutenhorm}
 \docType{data}
-\title{ ~~ data name/kind ... ~~}
+\title{ Luteinizing Hormone   }
+\concept{time series}
+\concept{block bootstrap}
+\concept{Luteinizing hormone}
 \description{
-  ~~ A concise (1-5 lines) description of the dataset. ~~
+ Five sets of levels of luteinizing hormone for each of 48 time periods
 }
 \usage{data(lutenhorm)}
 \format{
@@ -17,16 +20,23 @@
   }
 }
 \details{
-  ~~ If necessary, more details than the description above ~~
+  Five sets of levels of luteinizing hormone for each of 48 time periods, 
+  taken from Diggle (1990). These are hormone levels measured on a
+  healty woman in 10 minute intervals over a period of 8 hours. The luteinizing
+  hormone is one of the hormones that orchestrate the menstrual cycle
+  and hence it is important to understand its daily variation.  
+
+  This is a time series. The book gives only one time series, which 
+  correspond to \code{V4}. I don't know what are the other four series, 
+  the book does'nt mention them. They could be block bootstrap 
+  replicates?
 }
 \source{
-  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-  ~~ possibly secondary sources and usages ~~
+  Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap. 
+  Chapman and Hall, New York, London.
 }
 \examples{
-data(lutenhorm)
-## maybe str(lutenhorm) ; plot(lutenhorm) ...
+str(lutenhorm) 
+matplot(lutenhorm)
 }
 \keyword{datasets}

@@ -22,7 +22,8 @@
     \code{nbootsd} 
     is a dummy argument that is not used. If \code{theta} is the mean,
     for example, 
-    \code{sdmean <- function(x,nbootsd,theta,...) \{sqrt(var(x)/length(x))\}} .
+    \code{sdmean <- function(x,nbootsd,theta,...)} \cr 
+        \code{\{sqrt(var(x)/length(x))\}} .
     If \code{sdfun} is missing, then \code{boott} uses an inner
     bootstrap loop to estimate the 
     standard deviation of \code{theta(x)}}
@@ -65,7 +66,8 @@
   \item{call}{The deparsed call}
 }
 \references{
-  Tibshirani, R. (1988) "Variance stabilization and the bootstrap". Biometrika (1988) vol 75
+  Tibshirani, R. (1988) "Variance stabilization and the bootstrap". 
+       Biometrika (1988) vol 75
   no 3 pages 433-44.
   
   Hall, P. (1988) Theoretical comparison of bootstrap confidence

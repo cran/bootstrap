@@ -16,7 +16,8 @@
    \item{...}{any additional arguments to be passed to \code{theta}}
    \item{func}{(optional) argument specifying the functional the
       distribution of thetahat that is desired. 
-     If func is specified, the jackknife after-bootstrap estimate of its standard
+     If func is specified, the jackknife after-bootstrap estimate of 
+       its standard
      error is also returned. See example below.}
 }
 \value{

@@ -1,30 +1,39 @@
 \name{hormone}
 \alias{hormone}
 \docType{data}
-\title{  data name/kind ... }
+\title{ Hormone Data from page 107  }
 \description{
-  ~~ A concise (1-5 lines) description of the dataset. ~~
+   The hormone data. Amount in milligrams of anti-inflammatory hormone
+   remaining in 27 devices, after a certain number of hours (hrs)
+   of wear.
 }
 \usage{data(hormone)}
 \format{
   A data frame with 27 observations on the following 3 variables.
   \describe{
-    \item{V1}{a numeric vector}
-    \item{V2}{a numeric vector}
-    \item{V3}{a numeric vector}
+    \item{Lot}{a character vector}
+    \item{hrs}{a numeric vector}
+    \item{amount}{a numeric vector}
   }
 }
 \details{
-   If necessary, more details than the description above 
+   The hormone data. Amount in milligrams of anti-inflammatory hormone
+   remaining in 27 devices, after a certain number of hours (hrs)
+   of wear. The devices were sampled from 3 different manufacturing lots, 
+   called A, B and C. Lot C looks like it had greater amounts of
+   remaining hormone, but it also was worn the least number of hours. 
+
+   The book uses this as an example for regression analysis. 
 }
 \source{
-  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-  ~~ possibly secondary sources and usages ~~
+  Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap. 
+  Chapman and Hall, New York, London.
 }
 \examples{
-data(hormone)
-## maybe str(hormone) ; plot(hormone) ...
+str(hormone) 
+if(interactive())par(ask=TRUE)
+with(hormone, stripchart(amount ~ Lot))
+with(hormone, plot(amount ~ hrs, pch=Lot))
+abline( lm(amount ~ hrs, data=hormone, col="red2"))
 }
 \keyword{datasets}

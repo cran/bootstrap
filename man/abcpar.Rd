@@ -10,20 +10,23 @@ abcpar(y, tt, S, etahat, mu, n=rep(1,length(y)),lambda=0.001,
 }
 \arguments{
 \item{y}{vector of data}
-\item{tt}{function of expectation parameter \code{mu} defining the parameter of interest}
+\item{tt}{function of expectation parameter \code{mu} defining the parameter 
+                  of interest}
 \item{S}{maximum likelihood estimate of the covariance matrix of \code{x}}
 \item{etahat}{maximum likelihood estimate of the natural parameter eta}
 \item{mu}{function giving expectation of \code{x} in terms of eta}
 \item{n}{optional argument containing denominators for binomial (vector of
-length \code{length(x)})} 
-\item{lambda}{optional argument specifying step size for finite difference calculation}
+           length \code{length(x)})} 
+\item{lambda}{optional argument specifying step size for finite difference 
+              calculation}
 \item{alpha}{optional argument specifying confidence levels desired}
 }
 \value{
 list with the following components
 \item{call}{the call to abcpar}
-\item{limits}{The nominal confidence level, ABC point, quadratic ABC point, and
-standard normal point.} 
+\item{limits}{The nominal confidence level, ABC point, quadratic ABC point, 
+              and
+              standard normal point.} 
 \item{stats}{list consisting of  observed value of \code{tt}, estimated 
              standard error and estimated bias}
 \item{constants}{list consisting of \code{a}=acceleration constant,
