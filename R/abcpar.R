@@ -53,11 +53,13 @@
     dimnames(limits) <- list(NULL, c("alpha", "ABC", "ABCquad",
                                      "Standard"))
     ## output in list form
-    vl <- list(sys = syscall, limits = limits, stats =
-               list(thetahat=thetahat, sighat=sighat, bhat=bhat),
-               constants = list(a=a, z0=z0, cq=cq),
-               asym.05 = c(2 * a * 1.645, z0/1.645, cq * 1.645),
-               call=call)
+    vl <- list(sys = syscall, 
+              limits = limits, 
+              stats =
+                   list(thetahat=thetahat, sighat=sighat, bhat=bhat),
+              constants = list(a=a, z0=z0, cq=cq),
+              asym.05 = c(2 * a * 1.645, z0/1.645, cq * 1.645),
+              call=call)
     vl$dhat <- dhat
     vl$ehat <- ehat
     return(vl)

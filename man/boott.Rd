@@ -1,13 +1,13 @@
 \name{boott}
 \title{Bootstrap-t Confidence Limits}
 \description{See Efron and Tibshirani (1993) for details on this
-  function.}
+      function.}
 \keyword{nonparametric}
 \alias{boott}
 \usage{
-boott(x,theta, ..., sdfun=sdfunboot, nbootsd=25, nboott=200,
-      VS=FALSE, v.nbootg=100, v.nbootsd=25, v.nboott=200,
-      perc=c(.001,.01,.025,.05,.10,.50,.90,.95,.975,.99,.999))
+  boott(x,theta, ..., sdfun=sdfunboot, nbootsd=25, nboott=200,
+        VS=FALSE, v.nbootg=100, v.nbootsd=25, v.nboott=200,
+        perc=c(.001,.01,.025,.05,.10,.50,.90,.95,.975,.99,.999))
 }
 \arguments{
   \item{x}{a vector containing the data. Nonparametric bootstrap sampling is
@@ -62,6 +62,7 @@ boott(x,theta, ..., sdfun=sdfunboot, nbootsd=25, nboott=200,
     represents the estimate of the variance stabilizing transformation
     \code{g} at the points
     \code{theta[i]}.}
+  \item{call}{The deparsed call}
 }
 \references{
   Tibshirani, R. (1988) "Variance stabilization and the bootstrap". Biometrika (1988) vol 75
@@ -75,20 +76,20 @@ boott(x,theta, ..., sdfun=sdfunboot, nbootsd=25, nboott=200,
 }
 \examples{
 #  estimated confidence points for the mean
-x <- rchisq(20,1)
-theta <- function(x)\{mean(x)\}
-results <- boott(x,theta)
+   x <- rchisq(20,1)
+   theta <- function(x)\{mean(x)\}
+   results <- boott(x,theta)
 # estimated confidence points for the mean, 
 #  using variance-stabilization bootstrap-T method
-results <-  boott(x,theta,VS=TRUE)
-results$confpoints          # gives confidence points
+   results <-  boott(x,theta,VS=TRUE)
+   results$confpoints          # gives confidence points
 # plot the estimated var stabilizing transformation
-plot(results$theta,results$g) 
+   plot(results$theta,results$g) 
 # use standard formula for stand dev of mean
 # rather than an inner bootstrap loop
-sdmean <- function(x, ...) 
-    \{sqrt(var(x)/length(x))\}
-results <-  boott(x,theta,sdfun=sdmean) 
+   sdmean <- function(x, ...) 
+       \{sqrt(var(x)/length(x))\}
+   results <-  boott(x,theta,sdfun=sdmean) 
                                      
 # To bootstrap functions of more  complex data structures, 
 # write theta so that its argument x
@@ -96,9 +97,9 @@ results <-  boott(x,theta,sdfun=sdmean)
 #  and simply  pass as data to boot the vector 1,2,..n. 
 # For example, to bootstrap
 # the correlation coefficient from a set of 15 data pairs:                              
-xdata <- matrix(rnorm(30),ncol=2)
-n <- 15
-theta <- function(x, xdata)\{ cor(xdata[x,1],xdata[x,2]) \}
-results <- boott(1:n,theta, xdata)
+    xdata <- matrix(rnorm(30),ncol=2)
+    n <- 15
+    theta <- function(x, xdata)\{ cor(xdata[x,1],xdata[x,2]) \}
+    results <- boott(1:n,theta, xdata)
 }
 

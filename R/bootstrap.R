@@ -29,6 +29,7 @@
         }
     }
 
-    return(list(thetastar,func.thetastar,jack.boot.val, jack.boot.se,
-           call=call))
+    return(list(thetastar=thetastar, func.thetastar=func.thetastar,
+               jack.boot.val=jack.boot.val, jack.boot.se=jack.boot.se,
+               call=call))
 }

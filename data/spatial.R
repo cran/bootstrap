@@ -7,3 +7,7 @@ structure(list(V1 = c(48, 42), V2 = c(36, 33), V3 = c(20, 16), V4 = c(29,
 25), V21 = c(47, 27), V22 = c(41, 41), V23 = c(24, 28), V24 = c(26, 
 14), V25 = c(30, 28), V26 = c(41, 40)), class = "data.frame", row.names = c("1", 
 "2"))
+spatial  <-  t(spatial)
+colnames(spatial) <- c("A", "B")
+spatial <- as.data.frame(spatial)
+

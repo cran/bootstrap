@@ -1,5 +1,5 @@
 \name{abcnon}
-\title{Nonparametric ABC Confidence Limits}
+\title{ Nonparametric ABC Confidence Limits }
 \description{See Efron and Tibshirani (1993) for details on this
   function.}
 \keyword{nonparametric}
@@ -31,6 +31,7 @@ list with following components
 \item{pp}{matrix whose rows are the resampling points in the least
   favourable family. The abc confidence points are the function \code{tt}
   evaluated at these points}
+\item{call}{The deparsed call}
 }
 \references{
 Efron, B, and DiCiccio, T. (1992) More accurate confidence intervals 

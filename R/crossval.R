@@ -30,6 +30,9 @@
     }
   
     if(leave.out==1) groups <- NULL
-    return(list(cv.fit=cv.fit, ngroup=ngroup, leave.out=leave.out,
-           groups=groups, call=call)) 
+    return(list(cv.fit=cv.fit, 
+                ngroup=ngroup, 
+                leave.out=leave.out,
+                groups=groups, 
+                call=call)) 
 }

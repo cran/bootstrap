@@ -1,5 +1,5 @@
 \name{bcanon}
-\title{Nonparametric BCa Confidence Limits}
+\title{ Nonparametric BCa Confidence Limits }
 \description{See Efron and Tibshirani (1993) for details on this
   function.}
 \keyword{nonparametric}
@@ -23,6 +23,7 @@ bcanon(x, nboot, theta, ...,
   \item{z0}{estimated bias correction}
   \item{acc}{estimated acceleration constant}
   \item{u}{jackknife influence values}
+  \item{call}{The deparsed call}
 }
 \references{
 Efron, B. and   Tibshirani, R. (1986).  The Bootstrap
@@ -41,9 +42,9 @@ Chapman and Hall, New York, London.
 #  (this is for illustration; 
 #   since "mean" is a built in function,
 #   bcanon(x,100,mean) would be simpler!)
-x <- rnorm(20)                
-theta <- function(x)\{mean(x)\}
-results <- bcanon(x,100,theta)   
+   x <- rnorm(20)                
+   theta <- function(x)\{mean(x)\}
+   results <- bcanon(x,100,theta)   
                               
 # To obtain bca limits for functions of more 
 # complex data structures, write theta
@@ -52,9 +53,9 @@ results <- bcanon(x,100,theta)
 # the vector 1,2,..n. 
 # For example, find bca limits for
 # the correlation coefficient from a set of 15 data pairs:
-xdata <- matrix(rnorm(30),ncol=2)
-n <- 15
-theta <- function(x,xdata)\{ cor(xdata[x,1],xdata[x,2]) \}
-results <- bcanon(1:n,100,theta,xdata)
+   xdata <- matrix(rnorm(30),ncol=2)
+   n <- 15
+   theta <- function(x,xdata)\{ cor(xdata[x,1],xdata[x,2]) \}
+   results <- bcanon(1:n,100,theta,xdata)
 }
 

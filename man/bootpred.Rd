@@ -1,11 +1,11 @@
 \name{bootpred}
-\title{Bootstrap Estimates of Prediction Error}
+\title{  Bootstrap Estimates of Prediction Error  }
 \description{See Efron and Tibshirani (1993) for details on this
   function.}
 \keyword{nonparametric}
 \alias{bootpred}
 \usage{
-bootpred(x,y,nboot,theta.fit,theta.predict,err.meas,...)
+   bootpred(x,y,nboot,theta.fit,theta.predict,err.meas,...)
 }
 \arguments{
   \item{x}{a matrix containing the predictor (regressor) values. Each row
@@ -30,6 +30,7 @@ bootpred(x,y,nboot,theta.fit,theta.predict,err.meas,...)
   \item{optim}{the bootstrap estimate of optimism in \code{app.err}. A useful
     estimate of prediction error is \code{app.err+optim}} 
   \item{err.632}{the ".632" bootstrap estimate of prediction error.}
+  \item{call}{The deparsed call}
 }
 \references{
   Efron, B. (1983). Estimating the error rate of a prediction rule:
@@ -42,20 +43,20 @@ bootpred(x,y,nboot,theta.fit,theta.predict,err.meas,...)
 \examples{
 # bootstrap prediction error estimation in least squares
 #  regression
-x <- rnorm(85)  
-y <- 2*x +.5*rnorm(85)                      
-theta.fit <- function(x,y)\{lsfit(x,y)\}
-theta.predict <- function(fit,x)\{
+   x <- rnorm(85)  
+   y <- 2*x +.5*rnorm(85)                      
+   theta.fit <- function(x,y)\{lsfit(x,y)\}
+   theta.predict <- function(fit,x)\{
                cbind(1,x)\%*\%fit$coef         
                \}    
-sq.err <- function(y,yhat) \{ (y-yhat)^2\}                   
-results <- bootpred(x,y,20,theta.fit,theta.predict,
+   sq.err <- function(y,yhat) \{ (y-yhat)^2\}                   
+   results <- bootpred(x,y,20,theta.fit,theta.predict,
      err.meas=sq.err)  
                                       
 # for a classification problem, a standard choice 
 # for err.meas would simply count up the
 #  classification errors:
-miss.clas <- function(y,yhat)\{ 1*(yhat!=y)\}
+    miss.clas <- function(y,yhat)\{ 1*(yhat!=y)\}
 # with this specification,  bootpred estimates 
 #  misclassification rate
 }

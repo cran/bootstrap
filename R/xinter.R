@@ -23,13 +23,13 @@ function(x, y, z, increasing = TRUE)
         {ii <- ii+1;}                                             
         jj <- ii+1;                                                           
     }                                                                   
-    if (x[ii]==x[jj]) {result <- (x[ii])}
-    else if ((y[ii]==y[jj]) & (z <= y[1]))
-    {result <- x[1];}
-    else if ((y[ii]==y[jj]) & (z >= y[n]))
-    {result <- x[n];}
-    else if (y[ii]==y[jj]) {result <- (x[ii]+x[jj])/2;}
-    else {slope <- (y[jj]-y[ii])/(x[jj]-x[ii]);
+    if (x[ii]==x[jj]) {result <- (x[ii])}  else 
+    if ((y[ii]==y[jj]) & (z <= y[1]))
+    {result <- x[1];} else 
+    if ((y[ii]==y[jj]) & (z >= y[n]))
+    {result <- x[n];} else 
+     if (y[ii]==y[jj]) {result <- (x[ii]+x[jj])/2;} else 
+         {slope <- (y[jj]-y[ii])/(x[jj]-x[ii]);
           result <- x[ii]+(z-y[ii])/slope;
       }
     

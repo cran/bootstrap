@@ -1,5 +1,5 @@
 \name{abcpar}
-\title{Parametric ABC Confidence Limits}
+\title{  Parametric ABC Confidence Limits  }
 \description{See Efron and Tibshirani (1993) for details on this
   function.}
 \keyword{htest}
@@ -24,9 +24,11 @@ list with the following components
 \item{call}{the call to abcpar}
 \item{limits}{The nominal confidence level, ABC point, quadratic ABC point, and
 standard normal point.} 
-\item{stats}{list consisting of  observed value of \code{tt}, estimated standard error and estimated bias}
+\item{stats}{list consisting of  observed value of \code{tt}, estimated 
+             standard error and estimated bias}
 \item{constants}{list consisting of \code{a}=acceleration constant,
   \code{z0}=bias adjustment, \code{cq}=curvature component}
+\item{asym.05}
 }
 \references{
 Efron, B, and DiCiccio, T. (1992) More accurate confidence intervals 
