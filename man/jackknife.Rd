@@ -3,7 +3,7 @@
 \description{See Efron and Tibshirani (1993) for details on this
   function.}
 \keyword{nonparametric}
-\alias{jacknife}
+\alias{jackknife}
 \usage{
 jackknife(x, theta, ...)
 }

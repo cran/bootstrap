@@ -1,6 +1,6 @@
 Package: bootstrap
-Version: 1.0-7
-Date: 2001/05/15
+Version: 1.0-9
+Date: 2001-12-12
 Title: Functions for the Book "An Introduction to the Bootstrap"
 Author: S original by Rob Tibshirani <tibs@utstat.toronto.edu>.
         R port by Friedrich Leisch.

@@ -80,7 +80,7 @@ theta <- function(x)\{mean(x)\}
 results <- boott(x,theta)
 # estimated confidence points for the mean, 
 #  using variance-stabilization bootstrap-T method
-results <-  boott(x,theta,VS=T)
+results <-  boott(x,theta,VS=TRUE)
 results$confpoints          # gives confidence points
 # plot the estimated var stabilizing transformation
 plot(results$theta,results$g) 

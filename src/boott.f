@@ -17,8 +17,8 @@
       goto 23005
 23006 continue
       if(.not.(y(i) .le. u(n)))goto 23009
-      ty(i)=ty(i)+.5*(y(i)-u(j-1))*(2*v(j-1)+(y(i)-u(j-1))*(v(j)-v(j-1))
-&     /(u(j)-u(j-1)))
+      ty(i)=ty(i)+.5*(y(i)-u(j-1))*
+     &      (2*v(j-1)+(y(i)-u(j-1))*(v(j)-v(j-1)) / (u(j)-u(j-1)))
       goto 23010
 23009 continue
       ty(i)=ty(i)+(y(i)-u(n))*v(n) 
