@@ -12,7 +12,8 @@
                    as.double(y),
                    length(x),
                    as.double(z),
-                   result = double(1))
+                   result = double(1),
+                   PACKAGE = "bootstrap")
     if(increasing == FALSE) {
         zz$result <- -1 * zz$result
     }

@@ -12,6 +12,7 @@
                    as.double(y),
                    length(x),
                    as.double(z),
-                   result = double(1))
+                   result = double(1),
+                   PACKAGE = "bootstrap")
     return(zz$result)
 }
