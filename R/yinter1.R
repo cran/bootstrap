@@ -1,4 +1,3 @@
-library.dynam("bootstrap.so")
 
 "yinter"<-
   function(x, y, z, increasing = T)

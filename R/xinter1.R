@@ -1,9 +1,8 @@
-library.dynam("bootstrap.so")
 
 "xinter"<-
   function(x, y, z, increasing = T)
 {
-  
+
   if(increasing == F) {
     x <- -1 * x
     x <- x[length(x):1]

@@ -1,5 +1,3 @@
-library.dynam("bootstrap.so")
-
 "ctsub"<-
   function(x, y, z)
 {
