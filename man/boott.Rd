@@ -1,5 +1,9 @@
 \name{boott}
 \title{Bootstrap-t Confidence Limits}
+\description{See Efron and Tibshirani (1993) for details on this
+  function.}
+\keyword{nonparametric}
+\alias{boott}
 \usage{
 boott(x,theta, ..., sdfun=MISSING, nbootsd=25, nboott=200,
       VS=FALSE, v.nbootg=100, v.nbootsd=25, v.nboott=200,

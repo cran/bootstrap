@@ -1,5 +1,9 @@
 \name{bcanon}
 \title{Nonparametric BCa Confidence Limits}
+\description{See Efron and Tibshirani (1993) for details on this
+  function.}
+\keyword{nonparametric}
+\alias{bcanon}
 \usage{
 bcanon(x, nboot, theta, ..., 
        alpha=c(0.025, 0.05, 0.1, 0.16, 0.84, 0.9, 0.95, 0.975))

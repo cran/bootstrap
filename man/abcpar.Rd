@@ -1,11 +1,15 @@
 \name{abcpar}
 \title{Parametric ABC Confidence Limits}
+\description{See Efron and Tibshirani (1993) for details on this
+  function.}
+\keyword{htest}
+\alias{abcpar}
 \usage{
-abcpar(x, tt, S, etahat, mu, n=rep(1,length(x)),lambda=0.001, 
+abcpar(y, tt, S, etahat, mu, n=rep(1,length(x)),lambda=0.001, 
        alpha=c(0.025, 0.05, 0.1, 0.16))
 }
 \arguments{
-\item{x}{vector of data}
+\item{y}{vector of data}
 \item{tt}{function of expectation parameter \code{mu} defining the parameter of interest}
 \item{S}{maximum likelihood estimate of the covariance matrix of \code{x}}
 \item{etahat}{maximum likelihood estimate of the natural parameter eta}

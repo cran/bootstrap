@@ -1,8 +1,0 @@
-abcnon		Nonparametric ABC Confidence Limits
-abcpar		Parametric ABC Confidence Limits 
-bcanon		Nonparametric BCa Confidence Limits
-bootpred	Bootstrap Estimates of Prediction Error
-bootstrap	Non-parametric Bootstrapping
-boott		Bootstrap-t Confidence Limits
-crossval	K-fold Cross-Validation
-jackknife	Jackknife Estimation

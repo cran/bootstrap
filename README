@@ -7,8 +7,12 @@ Changes from original:
 
 	fixed call of boott (had 2 variable argument lists)
 
+	restructered help files for R consistency
 
-See README.orig for original authors and Copyright
+	added dummy help page for data and internal functions
+
+
+See README.orig for original authors and Copyright.
 
 The latest version of this package can always be downloaded from any
 CRAN mirror. The CRAN master site can be found at

@@ -1,5 +1,9 @@
 \name{crossval}
 \title{K-fold Cross-Validation}
+\description{See Efron and Tibshirani (1993) for details on this
+  function.}
+\keyword{nonparametric}
+\alias{crossval}
 \usage{
 crossval(x, y, theta.fit, theta.predict, ..., ngroup=n)
 }

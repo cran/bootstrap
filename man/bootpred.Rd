@@ -1,5 +1,9 @@
 \name{bootpred}
 \title{Bootstrap Estimates of Prediction Error}
+\description{See Efron and Tibshirani (1993) for details on this
+  function.}
+\keyword{nonparametric}
+\alias{bootpred}
 \usage{
 bootpred(x,y,nboot,theta.fit,theta.predict,err.meas,...)
 }
