@@ -30,5 +30,5 @@
         e0 <- e0+ (1/n)*sum(err1[o==0,i])/sum(o==0)
     }
     err.632 <- .368*app.err + .632*e0
-    return(app.err,optim, err.632, call=call)
+    return(list(app.err,optim, err.632, call=call))
 }

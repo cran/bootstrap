@@ -78,5 +78,5 @@
 
     dimnames(ans1) <- list(NULL,perc)
 
-    return(confpoints=ans1,theta=thetastar0,g,call=call)
+    return(list(confpoints=ans1,theta=thetastar0,g,call=call))
 }

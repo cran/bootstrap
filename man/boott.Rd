@@ -5,7 +5,7 @@
 \keyword{nonparametric}
 \alias{boott}
 \usage{
-boott(x,theta, ..., sdfun=MISSING, nbootsd=25, nboott=200,
+boott(x,theta, ..., sdfun=sdfunboot, nbootsd=25, nboott=200,
       VS=FALSE, v.nbootg=100, v.nbootsd=25, v.nboott=200,
       perc=c(.001,.01,.025,.05,.10,.50,.90,.95,.975,.99,.999))
 }

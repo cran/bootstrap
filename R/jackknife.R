@@ -10,5 +10,5 @@ function(x, theta, ...)
     thetahat <- theta(x, ...)
     jack.bias <- (n - 1) * (mean(u) - thetahat)
     jack.se <- sqrt(((n - 1)/n) * sum((u - mean(u))^2))
-    return(jack.se, jack.bias, jack.val = u, call=call)
+    return(list(jack.se, jack.bias, jack.val = u, call=call))
 }

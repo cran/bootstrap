@@ -23,5 +23,5 @@
     confpoints <- sort(thetastar)[ooo]
     confpoints <- cbind(alpha,confpoints)
     dimnames(confpoints)[[2]] <- c("alpha","bca point")
-    return(confpoints, z0, acc, u, call=call)
+    return(list(confpoints, z0, acc, u, call=call))
 }

@@ -37,6 +37,7 @@ call <- match.call()
 	limits <- cbind(alpha, abc, stan)
         dimnames(limits)[[2]] <- c("alpha", "abc", "stan")
 #output in list form.....................................................
-        return(limits=limits, stats=list(t0=t0,sighat=sighat,bhat=bhat), 
-constants=list(a=a,z0=z0,cq=cq), tt.inf=t., pp=pp, call=call)
+        return(list(limits=limits, stats=list(t0=t0,sighat=sighat,bhat=bhat), 
+                constants=list(a=a,z0=z0,cq=cq), 
+                tt.inf=t., pp=pp, call=call))
 }

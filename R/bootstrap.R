@@ -17,7 +17,8 @@
         jack.boot.val <- apply(matchs,2,jack.boot,thetastar,func)
 
         if(sum(is.na(jack.boot.val)>0)) {
-            cat("At least one jackknife influence value for func(theta) is   undefined", fill=TRUE)
+            cat("At least one jackknife influence value for func(theta) is   undefined", 
+                                   fill=TRUE)
             cat(" Increase nboot and try again",fill=TRUE)
             return()
         }
@@ -28,6 +29,6 @@
         }
     }
 
-    return(thetastar,func.thetastar,jack.boot.val, jack.boot.se,
-           call=call)
+    return(list(thetastar,func.thetastar,jack.boot.val, jack.boot.se,
+           call=call))
 }

@@ -5,7 +5,7 @@
 \keyword{htest}
 \alias{abcpar}
 \usage{
-abcpar(y, tt, S, etahat, mu, n=rep(1,length(x)),lambda=0.001, 
+abcpar(y, tt, S, etahat, mu, n=rep(1,length(y)),lambda=0.001, 
        alpha=c(0.025, 0.05, 0.1, 0.16))
 }
 \arguments{
