@@ -48,7 +48,7 @@ theta.fit <- function(x,y)\{lsfit(x,y)\}
 theta.predict <- function(fit,x)\{
                cbind(1,x)\%*\%fit$coef         
                \}    
-sq.err_function(y,yhat) \{ (y-yhat)^2\}                   
+sq.err <- function(y,yhat) \{ (y-yhat)^2\}                   
 results <- bootpred(x,y,20,theta.fit,theta.predict,
      err.meas=sq.err)  
                                       

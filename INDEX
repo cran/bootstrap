@@ -1,10 +1,10 @@
-abcnon                   Nonparametric ABC Confidence Limits
-abcpar                   Parametric ABC Confidence Limits
-bcanon                   Nonparametric BCa Confidence Limits
-bootpred                 Bootstrap Estimates of Prediction Error
-bootstrap                Non-Parametric Bootstrapping
-boott                    Bootstrap-t Confidence Limits
-crossval                 K-fold Cross-Validation
-bootstrap.data           Data sets of package bootstrap
-bootstrap.internal       Internal functions of package bootstrap
-jackknife                Jackknife Estimation
+abcnon                  Nonparametric ABC Confidence Limits
+abcpar                  Parametric ABC Confidence Limits
+bcanon                  Nonparametric BCa Confidence Limits
+bootpred                Bootstrap Estimates of Prediction Error
+bootstrap               Non-Parametric Bootstrapping
+boott                   Bootstrap-t Confidence Limits
+crossval                K-fold Cross-Validation
+bootstrap.data          Data sets of package bootstrap
+bootstrap-internal      Internal functions of package bootstrap
+jackknife               Jackknife Estimation
