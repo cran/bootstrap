@@ -39,7 +39,6 @@
   
   Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap.
   Chapman and Hall, New York, London.}
-}
 \examples{
 # bootstrap prediction error estimation in least squares
 #  regression

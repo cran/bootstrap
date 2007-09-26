@@ -30,8 +30,8 @@ list with the following components
 \item{stats}{list consisting of  observed value of \code{tt}, estimated 
              standard error and estimated bias}
 \item{constants}{list consisting of \code{a}=acceleration constant,
-  \code{z0}=bias adjustment, \code{cq}=curvature component}
-\item{asym.05}
+  \code{z0}=bias adjustment, \code{cq}=curvature component}, 
+\item{asym.05}{asymmetry component}
 }
 \references{
 Efron, B, and DiCiccio, T. (1992) More accurate confidence intervals 
