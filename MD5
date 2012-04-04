@@ -1,4 +1,5 @@
-6019043435e552d29f000b56f283cd77 *DESCRIPTION
+22bec1383f8bb8f07e39b95462320647 *DESCRIPTION
+0a1bc52567964e357f8a011fee21a520 *LICENSE
 9a3502f21e790334b9edb53a67503be5 *NAMESPACE
 14a4ef938ccca04208ff35d8aa4dfc7f *NEWS
 79f19ba683afdd94ac09cd94148632c2 *R/abcnon.R
@@ -15,7 +16,6 @@ d1ccf70124742a22f36158475ab8a986 *R/jackknife.R
 b04cbef0bc3f09c50a387961bf12931e *R/xinter1.R
 c5eb6393bf11654ffe7ddc05034acee4 *R/yinter.R
 8f788011f3611793647fd162bcd726ac *R/yinter1.R
-c2d96ae90dedec245ece975cc9c5da8f *R/zzz.R
 191252a7bec45a453b70df583a647df5 *README
 8d398318551ff8ba6cf5eaa4db1ee2e9 *data/Rainfall.rda
 6d99fbcf54f478c90f193bc1ff463c39 *data/cell.rda
@@ -57,4 +57,4 @@ a379b4ace9412440b03f46e637908aa7 *man/patch.Rd
 0601f0311d5e1e9b1ae13f444bf4913b *man/spatial.Rd
 34874558e582750946f41864b131cd22 *man/stamp.Rd
 1d6dced31c915b5fa7a241d8659ff999 *man/tooth.Rd
-4c27370fbb94ea1f24adcf4fde751277 *src/boott.f
+8e54eff65a7dc54a8ce7ad1d10b8e346 *src/boott.f

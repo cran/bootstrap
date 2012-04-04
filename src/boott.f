@@ -1,6 +1,6 @@
       subroutine ctsub(n,u,v,y,ty)
       implicit double precision (a-h,o-z)
-      double precision u(1),v(1),y(1),ty(1)
+      double precision u(n),v(n),y(n),ty(n)
       i=1
 23000 if(.not.(i .le. n))goto 23002
       if(.not.(y(i) .le. u(1)))goto 23003
