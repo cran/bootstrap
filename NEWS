@@ -32,8 +32,7 @@ Kjetil Halvorsen
 Introduced file NAMESPACE
 Introduced date-based version numbers.
 Fixed an error in th examples section of abcnon.Rd
-README (earlier name of this file) renamed to NEWS
-
+README (this file) renames to NEWS
 
 
 

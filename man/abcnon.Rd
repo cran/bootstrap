@@ -53,7 +53,7 @@ theta <- function(p, x)
     x1m <- sum(p * x[, 1])/sum(p)
     x2m <- sum(p * x[, 2])/sum(p)
     num <- sum(p * (x[, 1] - x1m) * (x[, 2] - x2m))
-    den <- sqrt(sum(p * (x[, 2] - x1m)^2) *
+    den <- sqrt(sum(p * (x[, 1] - x1m)^2) *
               sum(p * (x[, 2] - x2m)^2))
     return(num/den)
 \}
