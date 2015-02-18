@@ -33,7 +33,7 @@ plot(scor)
 # The parameter of interest (theta) is the fraction of variance explained 
 # by the first principal component.
 # For principal components analysis svd is better numerically than 
-# eigen-decomposistion, but for bootstrapping the later is MUCH faster.
+# eigen-decomposistion, but for bootstrapping the latter is _much_ faster.
 theta <- function(ind) {
    vals <- eigen(var(scor[ind,]), symmetric=TRUE, only.values=TRUE)$values
    vals[1] / sum(vals) }

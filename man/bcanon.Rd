@@ -19,7 +19,7 @@ bcanon(x, nboot, theta, ...,
 }
 \value{
   list with the following components
-  \item{confpoint}{estimated bca confidence limits}
+  \item{confpoints}{estimated bca confidence limits}
   \item{z0}{estimated bias correction}
   \item{acc}{estimated acceleration constant}
   \item{u}{jackknife influence values}

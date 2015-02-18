@@ -1,10 +1,10 @@
-9c9e180475e0746b71176005094a2130 *DESCRIPTION
+2950e7a0d2e1012b1ed33d7a2f079315 *DESCRIPTION
 0a1bc52567964e357f8a011fee21a520 *LICENSE
 9a3502f21e790334b9edb53a67503be5 *NAMESPACE
-779e445722fc5f105c6db1c91a6ecd06 *NEWS
+a45f0d2645fa43fdb59979546317b6ae *NEWS
 79f19ba683afdd94ac09cd94148632c2 *R/abcnon.R
 45214adab727c9a624589afed3571d3f *R/abcpar.R
-01a611d3bcfc2d84d7050eaace8f44c0 *R/bcanon.R
+30b0fe256dd56fe7099128f3a849e98f *R/bcanon.R
 fa09708244db3c0893a6014080e3a703 *R/bootpred.R
 52af261d65e732e400b8f6a1424f13a8 *R/bootstrap.R
 af367f023c50bf43228f2bb6ffb6949e *R/boott.R
@@ -36,7 +36,7 @@ dc73c2746adcd02ed2250586a1afac99 *data/spatial.rda
 7625ee7b271cd37d7f695c9eaa5ba7ef *man/Rainfall.Rd
 685da970a435bcd295ae949a202be64e *man/abcnon.Rd
 a91c7c9ece66c4613fd47fab601ee32e *man/abcpar.Rd
-5ab12e98fbdfe7589a61e7136f9672a0 *man/bcanon.Rd
+5b395f50c168897c9e3871ded1143ce5 *man/bcanon.Rd
 c33f8bc114e94b422bbde46357fd54cc *man/bootpred.Rd
 cb709f00a9cb55d9fce8c3a9dfdba99f *man/bootstrap.Rd
 688256e9e1e27d1ffd6813b966929a4f *man/boott.Rd
@@ -53,8 +53,9 @@ bd5b7dc96e491cda622325c8d0a5b195 *man/lutenhorm.Rd
 fc2bf28905fd1c4b28a09ccd362d967a *man/mouse.c.Rd
 f9619323982b2807d2e6e0eb3f5cb115 *man/mouse.t.Rd
 a379b4ace9412440b03f46e637908aa7 *man/patch.Rd
-1aa3cf355894dd1b39282d5e118fd102 *man/scor.Rd
+101f68c692ef570581bacc3b821fdbfb *man/scor.Rd
 0601f0311d5e1e9b1ae13f444bf4913b *man/spatial.Rd
 34874558e582750946f41864b131cd22 *man/stamp.Rd
 1d6dced31c915b5fa7a241d8659ff999 *man/tooth.Rd
 8e54eff65a7dc54a8ce7ad1d10b8e346 *src/boott.f
+a444ffd19109e1a59b215f60c71cf302 *tests/regressionTests.R
