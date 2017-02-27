@@ -1,3 +1,10 @@
+2017.2
+
+- Fix the GPA variable in the "law" dataset. The values are now of the form
+  3.39, instead of 339. This is consistent with the book and with the "law82"
+  dataset (thanks to Hon Hwang).
+- Update maintainer email address.
+
 2015.2
 
 - Use stats::quantile with type = 1, instead of a manually coded

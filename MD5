@@ -1,7 +1,7 @@
-2950e7a0d2e1012b1ed33d7a2f079315 *DESCRIPTION
+19b2b46e5aa3ea87d0c8cba6160f2685 *DESCRIPTION
 0a1bc52567964e357f8a011fee21a520 *LICENSE
 9a3502f21e790334b9edb53a67503be5 *NAMESPACE
-a45f0d2645fa43fdb59979546317b6ae *NEWS
+93547da15a6412b34b623b0deb0b8c40 *NEWS
 79f19ba683afdd94ac09cd94148632c2 *R/abcnon.R
 45214adab727c9a624589afed3571d3f *R/abcpar.R
 30b0fe256dd56fe7099128f3a849e98f *R/bcanon.R
@@ -23,7 +23,7 @@ b4f199ac6045f6b1610633a304193a9f *data/cholost.rda
 6d7ce94ed188d18295bc9299199e2b8d *data/datalist
 e71a5f70cf68b4466869ca6cb7f5a22d *data/diabetes.rda
 05c6a0fb2f76ce04b920b23e06e86d71 *data/hormone.rda
-a27b21fda3ad8f48adda32b0f988d140 *data/law.rda
+bbd1ba16362cbc5ebed4592776a99085 *data/law.rda
 6cae492f7d83f643fc107008f689917e *data/law82.rda
 5643005ab2ff5bd6e632c0bd9152c53d *data/lutenhorm.rda
 1d7c2f65ca5dc78c84b2ac1d979c0535 *data/mouse.c.rda

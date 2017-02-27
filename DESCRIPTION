@@ -1,21 +1,20 @@
 Package: bootstrap
-Version: 2015.2
-Date: 2015-02-18
+Version: 2017.2
+Date: 2017-02-27
 Title: Functions for the Book "An Introduction to the Bootstrap"
 Author: S original, from StatLib, by Rob Tibshirani.  R port by
         Friedrich Leisch.
-Maintainer: Scott Kostyshak <skostysh@princeton.edu>
+Maintainer: Scott Kostyshak <scott.kostyshak@gmail.com>
 Depends: stats, R (>= 2.10.0)
 LazyData: TRUE
 Description: Software (bootstrap, cross-validation, jackknife) and data
         for the book "An Introduction to the Bootstrap" by B. Efron and
-        R. Tibshirani, 1993, Chapman and Hall.
-        _____________________________________________________________
-        This package is primarily provided for projects already based
-        on it, and for support of the book.  New projects should
-        preferentially use the recommended package "boot".
+        R. Tibshirani, 1993, Chapman and Hall. This package is
+        primarily provided for projects already based on it, and for
+        support of the book. New projects should preferentially use the
+        recommended package "boot".
 License: BSD_3_clause + file LICENSE
 NeedsCompilation: yes
-Packaged: 2015-02-18 22:52:39 UTC; scott
+Packaged: 2017-02-27 18:27:32 UTC; scott
 Repository: CRAN
-Date/Publication: 2015-02-19 07:58:30
+Date/Publication: 2017-02-27 21:42:39
