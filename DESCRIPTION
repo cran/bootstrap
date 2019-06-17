@@ -1,6 +1,6 @@
 Package: bootstrap
-Version: 2017.2
-Date: 2017-02-27
+Version: 2019.6
+Date: 2019-06-15
 Title: Functions for the Book "An Introduction to the Bootstrap"
 Author: S original, from StatLib, by Rob Tibshirani.  R port by
         Friedrich Leisch.
@@ -14,7 +14,9 @@ Description: Software (bootstrap, cross-validation, jackknife) and data
         support of the book. New projects should preferentially use the
         recommended package "boot".
 License: BSD_3_clause + file LICENSE
+URL: https://gitlab.com/scottkosty/bootstrap
+BugReports: https://gitlab.com/scottkosty/bootstrap/issues
 NeedsCompilation: yes
-Packaged: 2017-02-27 18:27:32 UTC; scott
+Packaged: 2019-06-15 21:33:55 UTC; scott
 Repository: CRAN
-Date/Publication: 2017-02-27 21:42:39
+Date/Publication: 2019-06-17 09:40:08 UTC

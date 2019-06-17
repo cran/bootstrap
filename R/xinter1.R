@@ -7,7 +7,7 @@
         x <- x[length(x):1]
         y <- y[length(y):1]
     }
-    zz <- .Fortran("xinter",
+    zz <- .Fortran("f_xinter",
                    as.double(x),
                    as.double(y),
                    length(x),

@@ -7,7 +7,7 @@
         y <- y[length(y):1]
         z <- -1 * z
     }
-    zz <- .Fortran("yinter",
+    zz <- .Fortran("f_yinter",
                    as.double(x),
                    as.double(y),
                    length(x),

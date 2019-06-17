@@ -1,7 +1,7 @@
 "ctsub"<-
   function(x, y, z)
 {
-  junk <- .Fortran("ctsub",
+  junk <- .Fortran("f_ctsub",
 		   length(x),
 		   as.double(x),
 		   as.double(y),
